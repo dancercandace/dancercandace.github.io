@@ -1,5 +1,19 @@
 @media (orientation: landscape) {
 
+
+  h3 {
+  margin-left:5px;
+  font-size: 24px;
+  }
+  p {
+  text-align:justify;
+  padding:2px;
+  background-color:rgba(0,0,0,0.6);
+  font-size: 18px;
+
+  font-family: helvetica;
+  }
+
   :root {
 
   --navbar-size: 20%;
@@ -42,12 +56,26 @@
   h2 {
   margin-left:5px;
   font-size: 36px;
-}
+  }
 
 }
 
 
 @media (orientation: portrait) {
+
+
+  h3 {
+  margin-left:5px;
+  font-size: 36px;
+  }
+  p {
+  text-align:justify;
+  padding:2px;
+  background-color:rgba(0,0,0,0.6);
+  font-size: 26px;
+
+  font-family: helvetica;
+  }
 
   :root {
 
@@ -60,7 +88,7 @@
   
   h2 {
   margin-left:5px;
-  font-size: 22px;
+  font-size: 64px;
   background-color: black;
 
   }
@@ -117,14 +145,6 @@ color: pink;
 background-color: rgba(0,0,0,0.4)
 }
 
-p {
-text-align:justify;
-padding:1px;
-background-color:rgba(0,0,0,0.6);
-font-size: 18px;
-
-font-family: helvetica;
-}
 
 ul {
 background-color:rgba(0,0,0,0.6);
@@ -161,10 +181,6 @@ background-size:100vw 100vh;
 }
 
 
-h3 {
-margin-left:5px;
-font-size: 24px;
-}
 #main {
 
 /*position: relative;
@@ -223,6 +239,7 @@ grid-template-columns: 25% 25% 25% 25%;
 grid-template-rows: auto;
 
 */
+padding: 5px;
 }
 
 .sample-box {}
