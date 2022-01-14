@@ -1,12 +1,107 @@
-:root {
+@media (orientation: landscape) {
 
---navbar-size: 30%;
---main-size: calc(100% - var(--navbar-size));
+  :root {
 
---thumbnail-size:12vw;
---inset-size:35vw;
+  --navbar-size: 20%;
+  --main-size: calc(100% - var(--navbar-size));
+
+  --thumbnail-size:12vw;
+  --inset-size:35vw;
+
+  }
+
+  #main-doc {
+  position:relative;
+  top:0;
+  right:0;
+
+  left:var(--navbar-size);
+
+
+  width: calc(var(--main-size) - 5px);
+  height: 100%;
+
+  color: violet;
+  }
+
+  #navbar {
+  position: fixed;
+  
+  top:0;
+  left: 0;
+
+  width: var(--navbar-size);
+  height:100%;
+  }
+
+  #navheader: {
+  position:fixed;
+  top:0;
+  left:0;
+  }  
+  h2 {
+  margin-left:5px;
+  font-size: 36px;
+}
 
 }
+
+
+@media (orientation: portrait) {
+
+  :root {
+
+  --navbar-size: 30%;
+  --main-size: calc(100% - var(--navbar-size));
+
+  --thumbnail-size:12vw;
+  --inset-size:35vw;
+  }
+  
+  h2 {
+  margin-left:5px;
+  font-size: 22px;
+  background-color: black;
+
+  }
+
+  
+  
+  
+  #main-doc {
+  position:relative;
+  top:0;
+
+
+  width: 100%;
+  height: var(--main-size);
+
+  color: violet;
+  
+  z-index:0;
+  }
+
+  #navbar {
+  position: fixed;
+  top:var(--main-size);
+  left: 0;
+z-index: 1;
+  width: 100%;
+  height:var(--navbar-size);
+  background: black;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  }
+/*
+  #navheader: {
+  position:fixed;
+  top:0;
+  left:0;
+  }  
+*/
+
+}
+
 
 .main-section {}
 
@@ -65,10 +160,6 @@ background-size:100vw 100vh;
 }
 }
 
-h2 {
-margin-left:5px;
-font-size: 36px;
-}
 
 h3 {
 margin-left:5px;
@@ -88,34 +179,6 @@ color:violet;
 color: violet;
 }
 
-#main-doc {
-position:relative;
-top:0;
-right:0;
-
-left:var(--navbar-size);
-
-
-width: calc(var(--main-size) - 5px);
-height: 100%;
-
-color: violet;
-}
-
-#navbar {
-position: fixed;
-top:0;
-left: 0;
-
-width: var(--navbar-size);
-height:100%;
-}
-
-#navheader: {
-position:fixed;
-top:0;
-left:0;
-}
 
 
 .std-style {
