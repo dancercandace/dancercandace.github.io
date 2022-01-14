@@ -120,6 +120,7 @@ z-index: 1;
   background: black;
   display: grid;
   grid-template-columns: 33% 33% 33%;
+  text-align: center;
   }
 /*
   #navheader: {
