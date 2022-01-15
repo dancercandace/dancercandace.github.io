@@ -80,7 +80,7 @@
 
   :root {
 
-  --navbar-size: 20%;
+  --navbar-size: 15%;
   --main-size: calc(100% - var(--navbar-size));
 
   --thumbnail-size:12vw;
