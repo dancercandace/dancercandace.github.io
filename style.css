@@ -22,6 +22,9 @@
   --thumbnail-size:12vw;
   --inset-size:35vw;
 
+  --intro-reel-width: 70vw;
+  --intro-reel-offset: calc( calc( 100% - var(--intro-reel-width) ) / 2 );
+
   }
 
   #main-doc {
@@ -85,6 +88,10 @@
 
   --thumbnail-size:12vw;
   --inset-size:35vw;
+
+  --intro-reel-width: 100%;
+  --intro-reel-offset: 0px;
+
   }
   
   h2 {
@@ -134,6 +141,13 @@ z-index: 1;
   }
 }
 
+
+#intro-reel {
+position: relative;
+/* left: calc( calc( 100% - var(--intro-reel-width) ) / 2 ); */
+text-align: center;
+/* width: var(--intro-reel-width); */
+}
 
 .main-section {}
 
